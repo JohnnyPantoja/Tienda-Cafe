@@ -12,7 +12,7 @@ export class CafesService {
 
   constructor(private http: HttpClient) {}
 
-  getCafes(): Observable<Cafe> {
-    return this.http.get<Cafe>(this.api);
+  getCafes(): Observable<Cafe[]> {
+    return this.http.get<Cafe[]>(this.api);
   }
 }

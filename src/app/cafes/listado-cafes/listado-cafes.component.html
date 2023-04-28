@@ -4,7 +4,7 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <hr>
+      <hr />
     </div>
   </div>
   <div class="row">
@@ -14,7 +14,7 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <hr>
+      <hr />
     </div>
   </div>
   <div class="row">
@@ -23,43 +23,27 @@
         <thead class="table-dark">
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Región</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+          <tr *ngFor="let item of cafeList">
+            <th>{{ item.id }}</th>
+            <td>{{ item.nombre }}</td>
+            <td>{{ item.tipo }}</td>
+            <td>{{ item.region }}</td>
           </tr>
         </tbody>
       </table>
-      
     </div>
   </div>
 
   <div class="row">
-    <div class="col-4">
-      Total Café de origen: 3
-    </div>
+    <div class="col-4">Total Café de origen: {{ totalCafeOrigen }}</div>
   </div>
   <div class="row">
-    <div class="col-4">
-      Total Café blend: 3
-    </div>
+    <div class="col-4">Total Café blend: {{ totalCafeBlend }}</div>
   </div>
 </div>
