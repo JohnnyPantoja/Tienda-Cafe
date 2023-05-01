@@ -8,7 +8,7 @@ import { Cafe } from '../models/cafe.class';
   styleUrls: ['./listado-cafes.component.scss'],
 })
 export class ListadoCafesComponent implements OnInit {
- 
+
   cafeService: CafesService = inject(CafesService);
   cafeList:Cafe[]=[];
   totalCafeBlend:number=0;
